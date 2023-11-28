@@ -1,0 +1,14 @@
+<h1>Listado de Héroes</h1>
+
+
+<mat-divider></mat-divider>
+<hr>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-6 col-lg-4" *ngFor="let heroe of heroes">
+      <!--[heroe] Viene del componente hijo-->
+      <!--'heroe' Viene del componente padre y el array-->
+      <app-heroe-tarjeta [heroe]="heroe"></app-heroe-tarjeta>
+    </div>
+
+</div>
